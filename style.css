@@ -1,0 +1,336 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #87cbe2;
+}
+.header-area{
+    background-color: #3498db;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header-area img{
+    max-width: 150px;
+    cursor: pointer;
+}
+.header-area ul{
+    margin: 0px;
+}
+.header-area ul li{
+    display: inline-block;
+    list-style: none;
+}
+.header-area ul li a{
+    font-size: 20px;
+    padding: 13px 20px;
+    color: #fff;
+    border-right: 1px solid;
+    line-height: 2.3;
+    margin-left: -4px;
+    transition: .5s;
+}
+.header-area ul li a:hover{
+    background-color:#004370 ;
+    text-decoration: none;
+}
+/*slider design*/
+
+.slider-area{
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        background-image: url(./image/slide1.jpeg);
+    }
+    25%{
+        background-image: url(./image/slide2.jpg);
+    }
+    50%{
+        background-image: url(./image/slide3.jpg);
+    }
+    75%{
+        background-image: url(./image/slide4.jpg);
+    }
+    100%{
+        background-image: url(./image/slide5.jpg);
+    }
+}
+.slider-area h1{
+    font-size: 30px;
+    color: #30336b;
+    display: inline-block;
+    margin-top: 90px;
+    border-right: 3px solid rgb(29, 28, 28);
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text-typing 6s infinite;
+}
+@keyframes text-typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 24ch;
+    }
+}
+
+
+/*about section design*/
+
+.about-section{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+}
+.about-section .about-pra{
+    font-size: 22px;
+}
+
+/*content section design*/
+
+.content-section{
+    margin-top: 5%;
+    background-color: #87cbe2;
+}
+.content-section .containt-image{
+    margin-bottom: 10px;
+    
+}
+.content-section img{
+    max-width: 100%;
+    position: relative;
+}
+.content-section .containt-image span{
+    position: absolute;
+    top: 0;
+    font-size: 23px;
+    left: 15px;
+    width: 88%;
+    height: 96%;
+    text-align: center;
+    line-height: 300px;
+    transition: .5s;
+    transform-origin: left;
+    transform: scaleX(0);
+    color: rgb(94, 18, 156);
+    background-color: rgba(221, 221, 221,.5);
+}
+.content-section .containt-image:hover span{
+    transform: scaleX(1);
+}
+.content-section p{
+    text-align: justify;
+    font-size: 18px;
+}
+.content-section ul{
+    text-align: left;
+    list-style: none;
+}
+.content-section ul li{
+
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.content-section ul li a{
+    text-decoration: none;
+    color: rgb(24, 10, 10);
+    padding: 10px 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+/*service section design*/
+.service-section{
+    text-align: center;
+    margin-top: 50px;
+    background-color: #bdd3fc;
+}
+.service-section h1{
+    font-size: 43px;
+}
+.service-section .col-md-3{
+    background-color: rgba(153, 128, 250,1.0);
+    padding: 0;
+    margin-left: 12%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 20px 20px 1px black;
+}
+.service-section .col-md-3:first-child{
+    margin-left: 0;
+}
+.service-section .col-md-3 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 247, 255, 0.8);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .4s;
+    border-radius: 10px;
+}
+.service-section .col-md-3:hover span{
+    transform: scaleY(1);
+}
+.service-section .col-md-3 span button{
+    color: #ddd;
+    background-color: rgba(59, 59, 152,.9);
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px ;
+    border-radius: 4px;
+    margin-top: 50%;
+    z-index: 1;
+    position: relative;
+    box-shadow: 4px 4px 4px black;
+}
+.service-section .col-md-3 span button::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgb(31, 136, 36);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 4px;
+    transition: .4s;
+}
+.service-section .col-md-3 span button:hover::after{
+    width: 100%;
+}
+.service-section i {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background: #3B3B98;
+    line-height: 50px;
+    color: #DDD;
+    margin-top: 5px;
+    border-radius: 18px 0;
+    box-shadow: 4px 4px 1px black;
+}
+/*product section design*/
+.product{
+    background-color: #9fb18f;
+}
+.product button{
+    font-size: 20px;
+}
+.product img{
+    position: relative;
+}
+.product span {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 90%;
+    height: 85%;
+    text-align: center;
+    line-height: 333px;
+    color: #fff;
+    transition: .4s;
+    transform: scaley(0);
+    font-size: 20px;
+    background-color: rgba(255, 255, 255,.7);
+}
+.product .card:hover span{
+    transform: scaleY(1);
+}
+.product .t-shart {
+    display: inline-block;
+    width: 246px;
+    height: 253px;
+}
+.product .t-shart img {
+    width: 100%;
+    display: inline-block;
+    max-height: 100%;
+}
+/*contact section design*/
+.contact iframe{
+    max-width: 100%;
+}
+
+.contact form .btn{
+    margin: auto;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(0, 195, 255);
+}
+.contact form .btn:hover{
+    background-color: rgb(0, 132, 255);
+}
+
+/*footer section design*/
+.footer-area{
+    background-color: #273c75;
+}
+.footer-area p {
+    color: #fff;
+    line-height: 63px;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.footer-area ul{
+    text-align: right;
+    margin-bottom:0 ;
+}
+.footer-area ul li{
+    display: inline-block;
+}
+.footer-area ul li a {
+    font-size: 27px;
+    width: 40px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    margin: 11px;
+    background-color: #fff;
+    color: black;
+    transition: .4s;
+}
+
+
+.footer-area ul li:first-child:hover a{
+    color: rgb(0, 94, 216);
+    box-shadow: 5px 5px 8px black;
+}
+.footer-area ul li:nth-child(2):hover a{
+    color: rgb(179, 8, 113);
+    box-shadow: 5px 5px 8px black;
+}
+.footer-area ul li:nth-child(3):hover a{
+    color: rgb(34, 139, 201);
+    box-shadow: 5px 5px 8px black;
+}
+.footer-area ul li:nth-child(4):hover a{
+    color: rgb(197, 0, 0);
+    box-shadow: 5px 5px 8px black;
+}
+.footer-area ul li:last-child:hover a{
+    color: rgb(95, 28, 134);
+    box-shadow: 5px 5px 8px black;
+}
+
+
+
+
+/*responsive design*/
+
+
+/*header responsive*/
+@media all and(max-width:1199px){
+    
+}
